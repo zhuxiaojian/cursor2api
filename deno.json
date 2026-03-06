@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.window"],
+    "strict": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "noEmit": true
+  },
+  "imports": {
+    "express": "npm:express@^5.1.0",
+    "uuid": "npm:uuid@^11.1.0",
+    "yaml": "npm:yaml@^2.7.1",
+    "eventsource-parser": "npm:eventsource-parser@^3.0.1"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --watch src/index.ts",
+    "start": "deno run --allow-net --allow-read --allow-env src/index.ts"
+  },
+  "deploy": {
+    "entrypoint": "src/index.ts",
+    "exclude": [
+      "**/*.test.ts",
+      "**/*.md",
+      "node_modules",
+      "dist"
+    ]
+  }
+}

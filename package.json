@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "dev:deno": "deno task dev",
-    "build": "tsc",
+    "build": "echo 'Deno does not require build step'",
+    "build:node": "tsc",
     "start": "node dist/index.js",
     "start:deno": "deno task start"
   },
