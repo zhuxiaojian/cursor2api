@@ -38,3 +38,7 @@ npm-debug.log*
 *.swp
 *.swo
 *~
+
+# Express 版本入口（Deno 不使用）
+src/index.ts
+src/deno-index.ts

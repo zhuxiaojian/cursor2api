@@ -5,9 +5,9 @@
  */
 
 import { Application, Router } from 'npm:oak@^16.0.0';
-import { getConfig } from './config.js';
-import { handleMessages, listModels, countTokens } from './handler.js';
-import { handleOpenAIChatCompletions } from './openai-handler.js';
+import { getConfig } from './src/config.js';
+import { handleMessages, listModels, countTokens } from './src/handler.js';
+import { handleOpenAIChatCompletions } from './src/openai-handler.js';
 
 const config = getConfig();
 const app = new Application();
