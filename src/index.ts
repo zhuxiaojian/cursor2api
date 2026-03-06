@@ -5,7 +5,6 @@
  * 通过提示词注入让 Claude Code 拥有完整工具调用能力
  */
 
-import 'dotenv/config';
 import express from 'express';
 import { getConfig } from './config.js';
 import { handleMessages, listModels, countTokens } from './handler.js';
